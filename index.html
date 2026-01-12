@@ -77,7 +77,7 @@
 
         let auth, db;
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'smpn2-bangkalan';
-        const GOOGLE_SHEET_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxo63PrCdP6seDbb23cQv20qBcsSCHpLSLknfjR0fNV5ejXNfL15ZRaadBa_ODlnfAd/exec"; 
+        const GOOGLE_SHEET_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxeNOqF4577mq88ZMBJ_s3P5uV4StaC9vjhv_xCZlGREPYHPH8Ou1qsQvbkeiFPDuUm/exec"; 
 
         if (isConfigValid) {
             if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
@@ -1543,7 +1543,8 @@
                         <div className="text-center mb-6">
                              {/* CONTAINER LOGO */}
                             <div className="flex justify-center items-center gap-4 mb-4">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/480px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo Tutwuri" className="w-20 h-20 object-contain" />
+                                {/* UPDATE: Ukuran logo diperkecil dari w-20 menjadi w-16 agar proporsional */}
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg/480px-Logo_of_Ministry_of_Education_and_Culture_of_Republic_of_Indonesia.svg.png" alt="Logo Tutwuri" className="w-16 h-16 object-contain" />
                                 <img src="https://drive.google.com/thumbnail?id=1M9KTrEhMFWLofaiVdc6WuZeYXyG1A0Kp&sz=w200" alt="Logo Kabupaten" className="w-20 h-20 object-contain ml-3" referrerPolicy="no-referrer" onError={(e)=>{e.target.style.display='none'}} />
                                 <img src="https://drive.google.com/thumbnail?id=1kYAfhhBIjdrZc6iaeDqggCfLwdBErVWc&sz=w200" alt="Logo Sekolah" className="w-24 h-24 object-contain" referrerPolicy="no-referrer" onError={(e)=>{e.target.style.display='none'}} />
                             </div>
